@@ -1,4 +1,4 @@
-import mongoose from 'mongoose'
+const mongoose = require('mongoose');
 
 const whatsappSchema = mongoose.Schema({
     message : {
@@ -19,4 +19,6 @@ const whatsappSchema = mongoose.Schema({
 });
 
 const messageModel = mongoose.model('message',whatsappSchema);
- module.exports = {messageModel}
+ module.exports = { messageModel }
+
+ 
